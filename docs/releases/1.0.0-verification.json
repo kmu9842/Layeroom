@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "python_tests_passed": 51,
+  "paint_tests_passed": 4,
+  "widget_option_tests_passed": 3,
+  "browser_checks": [
+    "four original artworks preserved",
+    "PSD native layer order",
+    "Z range 0-0.1, default 0.025, step 0.005",
+    "zero spacing",
+    "rotation stops on release",
+    "motion off by default",
+    "new layer create/paint/undo/redo/save/reopen",
+    "empty manual layer retained",
+    "light/dark/mobile",
+    "matching viewer and inspector heights"
+  ],
+  "embedded_runtime": {
+    "embeddedApplication": true,
+    "isolatedRuntime": true,
+    "actualGuideArtwork": true,
+    "cpu": {
+      "seconds": 58,
+      "peak_ram_mib": 7032,
+      "device": "cpu",
+      "peak_vram_mib": 0
+    },
+    "completed": true
+  },
+  "guide_capture": {
+    "application": "Layeroom",
+    "actualPortableUI": true,
+    "initialCollectionEmpty": true,
+    "userArtworkIncluded": true,
+    "guideArtwork": "user-supplied character, local automatic segmentation",
+    "pages": 8,
+    "widgetExecutable": true,
+    "errors": []
+  },
+  "painting_performance": {
+    "dispatch_ms": [
+      1.800000011920929,
+      0.800000011920929,
+      1,
+      0.6000000238418579,
+      0.5999999940395355,
+      0.5999999940395355,
+      0.7000000178813934,
+      0.800000011920929,
+      0.800000011920929,
+      0.800000011920929,
+      0.5999999940395355,
+      0.5,
+      0.7999999821186066,
+      0.5,
+      0.5999999940395355,
+      0.5999999940395355
+    ],
+    "render_ms": [
+      0.29999998211860657,
+      0.19999998807907104,
+      0.09999999403953552,
+      0.09999999403953552,
+      0.20000001788139343,
+      0.09999999403953552,
+      0.19999998807907104,
+      0.9000000059604645,
+      0.09999999403953552,
+      0.10000002384185791,
+      0.09999999403953552,
+      0.09999999403953552,
+      0.09999999403953552,
+      0.10000002384185791,
+      0.09999999403953552,
+      0.09999999403953552
+    ],
+    "dirty_pixels": [
+      702,
+      840,
+      870,
+      899,
+      840,
+      899,
+      870,
+      899,
+      840,
+      899,
+      870,
+      840,
+      899,
+      870,
+      899,
+      840
+    ],
+    "mean": 0.7562500033527613,
+    "max": 1.800000011920929,
+    "width": 960,
+    "height": 1182
+  },
+  "distribution": {
+    "zip": "Layeroom-Windows-x64.zip",
+    "bytes": 5645852,
+    "sha256": "8370a98d1bffd18cbd87dde2594bfe465dc0fcbec8ae5f359890216efd71488a",
+    "files": 11,
+    "components_included": false,
+    "crc_verified": true
+  },
+  "final_archive": {
+    "files": 11,
+    "png_guides": 10,
+    "ascii_names": true,
+    "hashes_verified": true,
+    "first_run_prompt_verified": true,
+    "source_artwork_included": false,
+    "models_runtimes_research_included": false
+  },
+  "installed_update": {
+    "restarted": true,
+    "application_files_verified": 45,
+    "existing_artwork_files_unchanged": 226
+  }
+}

@@ -1,0 +1,25 @@
+Layeroom application and optional public components
+
+Python, AI model weights, PyTorch/CUDA and Electron are NOT in this ZIP.
+Setup downloads the selected components from public upstream sources.
+Versions, URLs and SHA-256 checksums: ../portable/components.json
+Frontend and See-through adapter notices are reproduced below in this file.
+
+Python 3.13.13 (PSF): https://www.python.org/ftp/python/3.13.13/
+After installation: ../runtime/python/LICENSE.txt
+Python package licenses: ../runtime/python/Lib/site-packages/*.dist-info
+PyTorch includes its own and bundled CUDA runtime notices when selected.
+https://pytorch.org/get-started/previous-versions/
+Microsoft Visual C++ app-local redistributable runtime:
+https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx
+https://learn.microsoft.com/cpp/windows/redistributing-visual-cpp-files
+Optional Electron runtime, including licenses, travels with exported widgets:
+https://github.com/electron/electron/releases
+
+Public optional models (Apache-2.0):
+https://huggingface.co/skytnt/anime-seg
+https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
+https://huggingface.co/24yearsold/l2d_sam_iter2
+
+The app collection is empty. Guide screenshots use the artwork explicitly supplied
+by the user for this guide. No source artwork or processed card is bundled.

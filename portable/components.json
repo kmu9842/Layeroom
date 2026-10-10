@@ -1,0 +1,861 @@
+{
+  "format": 1,
+  "python": {
+    "filename": "python-3.13.13-embed-amd64.zip",
+    "bytes": 10950201,
+    "url": "https://www.python.org/ftp/python/3.13.13/python-3.13.13-embed-amd64.zip",
+    "sha256": "8766a8775746235e23cf5aee5027ab1060bb981d93110577adcf3508aa0cbd55"
+  },
+  "crt": {
+    "url": "https://download.microsoft.com/download/4/7/c/47c6134b-d61f-4024-83bd-b9c9ea951c25/Microsoft.VCLibs.x64.14.00.Desktop.appx",
+    "bytes": 6764349,
+    "sha256": "b56a9101f706f9d95f815f5b7fa6efbac972e86573d378b96a07cff5540c5961",
+    "filename": "Microsoft.VCLibs.x64.14.00.Desktop.appx"
+  },
+  "components": {
+    "core": {
+      "title": "기본 실행 환경",
+      "files": [
+        {
+          "kind": "wheel",
+          "package": "aggdraw",
+          "version": "1.4.1",
+          "filename": "aggdraw-1.4.1-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/4e/3d/192425568971d7b79ccbb28fa8613d5787878d8f002d29d497e54e6198b0/aggdraw-1.4.1-cp313-cp313-win_amd64.whl",
+          "sha256": "a746d521c21855348446036797c0174b5947621b1a76ff849f4fbcfec37973f9",
+          "bytes": 47343
+        },
+        {
+          "kind": "wheel",
+          "package": "annotated-types",
+          "version": "0.7.0",
+          "filename": "annotated_types-0.7.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl",
+          "sha256": "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53",
+          "bytes": 13643
+        },
+        {
+          "kind": "wheel",
+          "package": "anyio",
+          "version": "4.13.0",
+          "filename": "anyio-4.13.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/da/42/e921fccf5015463e32a3cf6ee7f980a6ed0f395ceeaa45060b61d86486c2/anyio-4.13.0-py3-none-any.whl",
+          "sha256": "08b310f9e24a9594186fd75b4f73f4a4152069e3853f1ed8bfbf58369f4ad708",
+          "bytes": 114353
+        },
+        {
+          "kind": "wheel",
+          "package": "attrs",
+          "version": "26.1.0",
+          "filename": "attrs-26.1.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+          "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+          "bytes": 67548
+        },
+        {
+          "kind": "wheel",
+          "package": "certifi",
+          "version": "2026.4.22",
+          "filename": "certifi-2026.4.22-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/22/30/7cd8fdcdfbc5b869528b079bfb76dcdf6056b1a2097a662e5e8c04f42965/certifi-2026.4.22-py3-none-any.whl",
+          "sha256": "3cb2210c8f88ba2318d29b0388d1023c8492ff72ecdde4ebdaddbb13a31b1c4a",
+          "bytes": 135707
+        },
+        {
+          "kind": "wheel",
+          "package": "click",
+          "version": "8.5.0",
+          "filename": "click-8.5.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl",
+          "sha256": "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360",
+          "bytes": 125251
+        },
+        {
+          "kind": "wheel",
+          "package": "fastapi",
+          "version": "0.115.12",
+          "filename": "fastapi-0.115.12-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/50/b3/b51f09c2ba432a576fe63758bddc81f78f0c6309d9e5c10d194313bf021e/fastapi-0.115.12-py3-none-any.whl",
+          "sha256": "e94613d6c05e27be7ffebdd6ea5f388112e5e430c8f7d6494a9d1d88d43e814d",
+          "bytes": 95164
+        },
+        {
+          "kind": "wheel",
+          "package": "h11",
+          "version": "0.16.0",
+          "filename": "h11-0.16.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+          "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+          "bytes": 37515
+        },
+        {
+          "kind": "wheel",
+          "package": "httpcore",
+          "version": "1.0.9",
+          "filename": "httpcore-1.0.9-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl",
+          "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+          "bytes": 78784
+        },
+        {
+          "kind": "wheel",
+          "package": "httpx",
+          "version": "0.28.1",
+          "filename": "httpx-0.28.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl",
+          "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+          "bytes": 73517
+        },
+        {
+          "kind": "wheel",
+          "package": "idna",
+          "version": "3.13",
+          "filename": "idna-3.13-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/13/ad7d7ca3808a898b4612b6fe93cde56b53f3034dcde235acb1f0e1df24c6/idna-3.13-py3-none-any.whl",
+          "sha256": "892ea0cde124a99ce773decba204c5552b69c3c67ffd5f232eb7696135bc8bb3",
+          "bytes": 68629
+        },
+        {
+          "kind": "wheel",
+          "package": "imageio",
+          "version": "2.38.1",
+          "filename": "imageio-2.38.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/7d/8a/3b7f62b9df56460959f1b9bef094248d2a4d7f393c5b0d2da8efcdf0e40e/imageio-2.38.1-py3-none-any.whl",
+          "sha256": "36d23eb7423d2fb63f637098758edb3d2df3687f7125e0a5ce8596572022dcf9",
+          "bytes": 328389
+        },
+        {
+          "kind": "wheel",
+          "package": "lazy-loader",
+          "version": "0.6",
+          "filename": "lazy_loader-0.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/23/93/4e45e37f26c820216704b36b8e67cc55c490a7abd287a78a26a2c0e21386/lazy_loader-0.6-py3-none-any.whl",
+          "sha256": "77253be3391b06124a0e16105bd663b6c54470af1a9ca8e1cf026f38d58ed056",
+          "bytes": 8791
+        },
+        {
+          "kind": "wheel",
+          "package": "networkx",
+          "version": "3.6.1",
+          "filename": "networkx-3.6.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
+          "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
+          "bytes": 2068504
+        },
+        {
+          "kind": "wheel",
+          "package": "numpy",
+          "version": "2.5.0",
+          "filename": "numpy-2.5.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/30/53/491e1c47c55b62ccc6a63c1c5b8635c73fc2258dddeb9bda27cae4a0ae96/numpy-2.5.0-cp313-cp313-win_amd64.whl",
+          "sha256": "44353e2878930039db472b99dc353d749826e4010bd4d2a7f835e94a97a5c748",
+          "bytes": 12414420
+        },
+        {
+          "kind": "wheel",
+          "package": "opencv-python-headless",
+          "version": "4.14.0.94",
+          "filename": "opencv_python_headless-4.14.0.94-cp37-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/ad/8d/db8673846ee53cbb5de4c2b4decc11cf733e203eb7d5146297869f69bd48/opencv_python_headless-4.14.0.94-cp37-abi3-win_amd64.whl",
+          "sha256": "cbed65415b8f6a9541c705afe3e64795840524d0ff3bc58f507826284a1dc64b",
+          "bytes": 41028030
+        },
+        {
+          "kind": "wheel",
+          "package": "packaging",
+          "version": "26.2",
+          "filename": "packaging-26.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+          "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+          "bytes": 100195
+        },
+        {
+          "kind": "wheel",
+          "package": "pillow",
+          "version": "12.2.0",
+          "filename": "pillow-12.2.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/3f/82/8a3739a5e470b3c6cbb1d21d315800d8e16bff503d1f16b03a4ec3212786/pillow-12.2.0-cp313-cp313-win_amd64.whl",
+          "sha256": "390ede346628ccc626e5730107cde16c42d3836b89662a115a921f28440e6a3b",
+          "bytes": 7081266
+        },
+        {
+          "kind": "wheel",
+          "package": "psd-tools",
+          "version": "1.24.0",
+          "filename": "psd_tools-1.24.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/51/a2/52883c5fd65ea05cd78ef1f049320d4f883fbdf28dfc8568d123646d24c9/psd_tools-1.24.0-cp313-cp313-win_amd64.whl",
+          "sha256": "98420616dc86acb114c2e19d4035ad3b5a6750fef3183ef92eb38c9052cb278a",
+          "bytes": 689296
+        },
+        {
+          "kind": "wheel",
+          "package": "pydantic",
+          "version": "2.13.4",
+          "filename": "pydantic-2.13.4-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/fd/7b/122376b1fd3c62c1ed9dc80c931ace4844b3c55407b6fb2d199377c9736f/pydantic-2.13.4-py3-none-any.whl",
+          "sha256": "45a282cde31d808236fd7ea9d919b128653c8b38b393d1c4ab335c62924d9aba",
+          "bytes": 472262
+        },
+        {
+          "kind": "wheel",
+          "package": "pydantic-core",
+          "version": "2.46.4",
+          "filename": "pydantic_core-2.46.4-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/7e/e8/cff247591966f2d22ec8c003cd7587e27b7ba7b81ab2fb888e3ab75dc285/pydantic_core-2.46.4-cp313-cp313-win_amd64.whl",
+          "sha256": "6b3ace8194b0e5204818c92802dcdca7fc6d88aabbb799d7c795540d9cd6d292",
+          "bytes": 2071819
+        },
+        {
+          "kind": "wheel",
+          "package": "python-multipart",
+          "version": "0.0.20",
+          "filename": "python_multipart-0.0.20-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/45/58/38b5afbc1a800eeea951b9285d3912613f2603bdf897a4ab0f4bd7f405fc/python_multipart-0.0.20-py3-none-any.whl",
+          "sha256": "8a62d3a8335e06589fe01f2a3e178cdcc632f3fbe0d492ad9ee0ec35aab1f104",
+          "bytes": 24546
+        },
+        {
+          "kind": "wheel",
+          "package": "scikit-image",
+          "version": "0.26.0",
+          "filename": "scikit_image-0.26.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/8f/58/2b11b933097bc427e42b4a8b15f7de8f24f2bac1fd2779d2aea1431b2c31/scikit_image-0.26.0-cp313-cp313-win_amd64.whl",
+          "sha256": "ac529eb9dbd5954f9aaa2e3fe9a3fd9661bfe24e134c688587d811a0233127f1",
+          "bytes": 11906770
+        },
+        {
+          "kind": "wheel",
+          "package": "scipy",
+          "version": "1.18.1",
+          "filename": "scipy-1.18.1-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/93/0e/e0348fbc0dbab65c114cf78957e7dfeb49f8e8b556b4d930cc12ff195e18/scipy-1.18.1-cp313-cp313-win_amd64.whl",
+          "sha256": "559ed65f60c1af5a03f3912605a1b5114f522c7c32fb23c3376ae8f03219fe28",
+          "bytes": 36622841
+        },
+        {
+          "kind": "wheel",
+          "package": "starlette",
+          "version": "0.46.2",
+          "filename": "starlette-0.46.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/8b/0c/9d30a4ebeb6db2b25a841afbb80f6ef9a854fc3b41be131d249a977b4959/starlette-0.46.2-py3-none-any.whl",
+          "sha256": "595633ce89f8ffa71a015caed34a5b2dc1c0cdb3f0f1fbd1e69339cf2abeec35",
+          "bytes": 72037
+        },
+        {
+          "kind": "wheel",
+          "package": "tifffile",
+          "version": "2026.9.20",
+          "filename": "tifffile-2026.9.20-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/05/bf/04f3e61cb20a03678ca43f29bae9a7d0b7d9f563b86f5f600b2d8fba9712/tifffile-2026.9.20-py3-none-any.whl",
+          "sha256": "9b913167b8f66a57f2e7c0454486c4c4607196d494797461226166bd0755c0e6",
+          "bytes": 275004
+        },
+        {
+          "kind": "wheel",
+          "package": "typing-extensions",
+          "version": "4.15.0",
+          "filename": "typing_extensions-4.15.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl",
+          "sha256": "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548",
+          "bytes": 44614
+        },
+        {
+          "kind": "wheel",
+          "package": "typing-inspection",
+          "version": "0.4.2",
+          "filename": "typing_inspection-0.4.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl",
+          "sha256": "4ed1cacbdc298c220f1bd249ed5287caa16f34d44ef4e9c3d0cbad5b521545e7",
+          "bytes": 14611
+        },
+        {
+          "kind": "wheel",
+          "package": "uvicorn",
+          "version": "0.34.2",
+          "filename": "uvicorn-0.34.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/b1/4b/4cef6ce21a2aaca9d852a6e84ef4f135d99fcd74fa75105e2fc0c8308acd/uvicorn-0.34.2-py3-none-any.whl",
+          "sha256": "deb49af569084536d269fe0a6d67e3754f104cf03aba7c11c40f01aadf33c403",
+          "bytes": 62483
+        }
+      ],
+      "fingerprint": "9faa09a31a5f4b38311bec773d4aaaad904441156b4026c6e181a0338718ba06",
+      "bytes": 133857882
+    },
+    "ai_cpu": {
+      "title": "자동 분절 · CPU",
+      "files": [
+        {
+          "kind": "wheel",
+          "package": "accelerate",
+          "version": "1.15.0",
+          "filename": "accelerate-1.15.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl",
+          "sha256": "97eacca0b73e45cb867dbf8c5d5d4dc32219544300e0c8992c7334dc2ef33cec",
+          "bytes": 394295
+        },
+        {
+          "kind": "wheel",
+          "package": "charset-normalizer",
+          "version": "3.4.7",
+          "filename": "charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/78/1b74c5bbb3f99b77a1715c91b3e0b5bdb6fe302d95ace4f5b1bec37b0167/charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl",
+          "sha256": "3946fa46a0cf3e4c8cb1cc52f56bb536310d34f25f01ca9b6c16afa767dab110",
+          "bytes": 158819
+        },
+        {
+          "kind": "wheel",
+          "package": "colorama",
+          "version": "0.4.6",
+          "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+          "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "bytes": 25335
+        },
+        {
+          "kind": "wheel",
+          "package": "einops",
+          "version": "0.8.2",
+          "filename": "einops-0.8.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+          "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+          "bytes": 65638
+        },
+        {
+          "kind": "wheel",
+          "package": "filelock",
+          "version": "3.32.0",
+          "filename": "filelock-3.32.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/06/79/b4c714bef36bc4ec2beeae1e0c124f0223888cd8c6feb1cdc56038116920/filelock-3.32.0-py3-none-any.whl",
+          "sha256": "d396bea984af47333ef05e50eae7eff88c84256de6112aea0ec48a233c064fe3",
+          "bytes": 97732
+        },
+        {
+          "kind": "wheel",
+          "package": "flatbuffers",
+          "version": "25.12.19",
+          "filename": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl",
+          "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+          "bytes": 26661
+        },
+        {
+          "kind": "wheel",
+          "package": "fsspec",
+          "version": "2026.6.0",
+          "filename": "fsspec-2026.6.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/e5/22/4222d7ddf3da30f363edaa98e329c2bce6c65497c9cb2810931c8b2c0fbc/fsspec-2026.6.0-py3-none-any.whl",
+          "sha256": "02e0b71817df9b2169dc30a16832045764def1191b43dcff5bb85bdee212d2a1",
+          "bytes": 203949
+        },
+        {
+          "kind": "wheel",
+          "package": "huggingface-hub",
+          "version": "0.36.2",
+          "filename": "huggingface_hub-0.36.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl",
+          "sha256": "48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270",
+          "bytes": 566395
+        },
+        {
+          "kind": "wheel",
+          "package": "jinja2",
+          "version": "3.1.6",
+          "filename": "jinja2-3.1.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+          "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+          "bytes": 134899
+        },
+        {
+          "kind": "wheel",
+          "package": "markupsafe",
+          "version": "3.0.3",
+          "filename": "markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/05/73/c4abe620b841b6b791f2edc248f556900667a5a1cf023a6646967ae98335/markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+          "sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5",
+          "bytes": 15113
+        },
+        {
+          "kind": "wheel",
+          "package": "mpmath",
+          "version": "1.3.0",
+          "filename": "mpmath-1.3.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+          "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+          "bytes": 536198
+        },
+        {
+          "kind": "wheel",
+          "package": "onnxruntime",
+          "version": "1.31.0",
+          "filename": "onnxruntime-1.31.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c4/86/05ed2056f43b27aaf12ebc592ebd9037a26bed315958cf882f43425fd469/onnxruntime-1.31.0-cp313-cp313-win_amd64.whl",
+          "sha256": "73e0165d58ece068c2a8a1c477c90b38e5a8adbbd399fdfdfd4bd79cbc28ff8d",
+          "bytes": 14888306
+        },
+        {
+          "kind": "wheel",
+          "package": "protobuf",
+          "version": "7.36.2",
+          "filename": "protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/8a/55/b77bda4e5e5f5971fb51b07663694690e9afdb9402136c16a522bd621cad/protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+          "sha256": "a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353",
+          "bytes": 456514
+        },
+        {
+          "kind": "wheel",
+          "package": "psutil",
+          "version": "7.2.2",
+          "filename": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad92351a7/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+          "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+          "bytes": 137737
+        },
+        {
+          "kind": "wheel",
+          "package": "pyyaml",
+          "version": "6.0.3",
+          "filename": "pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/97/c9/39d5b874e8b28845e4ec2202b5da735d0199dbe5b8fb85f91398814a9a46/pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+          "sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c",
+          "bytes": 154090
+        },
+        {
+          "kind": "wheel",
+          "package": "regex",
+          "version": "2026.5.9",
+          "filename": "regex-2026.5.9-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/e6/1d/861a93719fb9ee7dbfc3761b3797b7a3e112a5d42c6129459d2d741be9b5/regex-2026.5.9-cp313-cp313-win_amd64.whl",
+          "sha256": "3527bb4942d2c14552155406cdedd906567456821848aed1cb4933a391bf5eca",
+          "bytes": 277747
+        },
+        {
+          "kind": "wheel",
+          "package": "requests",
+          "version": "2.33.1",
+          "filename": "requests-2.33.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl",
+          "sha256": "4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a",
+          "bytes": 64947
+        },
+        {
+          "kind": "wheel",
+          "package": "safetensors",
+          "version": "0.6.2",
+          "filename": "safetensors-0.6.2-cp38-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/2c/c3/c0be1135726618dc1e28d181b8c442403d8dbb9e273fd791de2d4384bcdd/safetensors-0.6.2-cp38-abi3-win_amd64.whl",
+          "sha256": "c7b214870df923cbc1593c3faee16bec59ea462758699bd3fee399d00aac072c",
+          "bytes": 320192
+        },
+        {
+          "kind": "wheel",
+          "package": "setuptools",
+          "version": "83.0.0",
+          "filename": "setuptools-83.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl",
+          "sha256": "29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3",
+          "bytes": 1008090
+        },
+        {
+          "kind": "wheel",
+          "package": "sympy",
+          "version": "1.14.0",
+          "filename": "sympy-1.14.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+          "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+          "bytes": 6299353
+        },
+        {
+          "kind": "wheel",
+          "package": "tokenizers",
+          "version": "0.22.2",
+          "filename": "tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+          "sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48",
+          "bytes": 2747786
+        },
+        {
+          "kind": "wheel",
+          "package": "tqdm",
+          "version": "4.67.3",
+          "filename": "tqdm-4.67.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl",
+          "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf",
+          "bytes": 78374
+        },
+        {
+          "kind": "wheel",
+          "package": "transformers",
+          "version": "4.57.6",
+          "filename": "transformers-4.57.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/03/b8/e484ef633af3887baeeb4b6ad12743363af7cce68ae51e938e00aaa0529d/transformers-4.57.6-py3-none-any.whl",
+          "sha256": "4c9e9de11333ddfe5114bc872c9f370509198acf0b87a832a0ab9458e2bd0550",
+          "bytes": 11993498
+        },
+        {
+          "kind": "wheel",
+          "package": "urllib3",
+          "version": "2.7.0",
+          "filename": "urllib3-2.7.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+          "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+          "bytes": 131087
+        },
+        {
+          "kind": "model",
+          "filename": "isnetis.onnx",
+          "target": "models/anime-seg.onnx",
+          "url": "https://huggingface.co/skytnt/anime-seg/resolve/493cb60893f47441b26ec4fb9a306bce9e342982/isnetis.onnx",
+          "sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+          "bytes": 176069933
+        },
+        {
+          "kind": "model",
+          "filename": "checkpoint-18000.pt",
+          "target": "models/semantic-sam.pt",
+          "url": "https://huggingface.co/24yearsold/l2d_sam_iter2/resolve/0b0608310fb7a89e32ecd7397147a249540cf1e7/checkpoint-18000.pt",
+          "sha256": "dda82b916f6c340bc5a6c3a077ff1214f9906906abe3707b1076d55b508f253f",
+          "bytes": 1294766917
+        },
+        {
+          "kind": "model",
+          "filename": "config.json",
+          "target": "models/depth-anything-v2-small/config.json",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json",
+          "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+          "bytes": 950
+        },
+        {
+          "kind": "model",
+          "filename": "preprocessor_config.json",
+          "target": "models/depth-anything-v2-small/preprocessor_config.json",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json",
+          "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+          "bytes": 775
+        },
+        {
+          "kind": "model",
+          "filename": "model.safetensors",
+          "target": "models/depth-anything-v2-small/model.safetensors",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors",
+          "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+          "bytes": 99173660
+        },
+        {
+          "kind": "wheel",
+          "package": "torch",
+          "version": "2.8.0+cpu",
+          "filename": "torch-2.8.0+cpu-cp313-cp313-win_amd64.whl",
+          "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.8.0%2Bcpu-cp313-cp313-win_amd64.whl",
+          "sha256": "e1ee1b2346ade3ea90306dfbec7e8ff17bc220d344109d189ae09078333b0856",
+          "bytes": 619356958
+        },
+        {
+          "kind": "wheel",
+          "package": "torchvision",
+          "version": "0.23.0+cpu",
+          "filename": "torchvision-0.23.0+cpu-cp313-cp313-win_amd64.whl",
+          "url": "https://download-r2.pytorch.org/whl/cpu/torchvision-0.23.0%2Bcpu-cp313-cp313-win_amd64.whl",
+          "sha256": "82928788025170c62e7df1120dcdc0cd175bfc31c08374613ce6d1a040bc0cda",
+          "bytes": 1600873
+        }
+      ],
+      "fingerprint": "5a1f71d1ca48acf9ce7ff809589c7a80e1f6c33c2905899a488a7daf05585ef8",
+      "bytes": 2231752821
+    },
+    "ai_cuda": {
+      "title": "자동 분절 · NVIDIA GPU",
+      "files": [
+        {
+          "kind": "wheel",
+          "package": "accelerate",
+          "version": "1.15.0",
+          "filename": "accelerate-1.15.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl",
+          "sha256": "97eacca0b73e45cb867dbf8c5d5d4dc32219544300e0c8992c7334dc2ef33cec",
+          "bytes": 394295
+        },
+        {
+          "kind": "wheel",
+          "package": "charset-normalizer",
+          "version": "3.4.7",
+          "filename": "charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/78/1b74c5bbb3f99b77a1715c91b3e0b5bdb6fe302d95ace4f5b1bec37b0167/charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl",
+          "sha256": "3946fa46a0cf3e4c8cb1cc52f56bb536310d34f25f01ca9b6c16afa767dab110",
+          "bytes": 158819
+        },
+        {
+          "kind": "wheel",
+          "package": "colorama",
+          "version": "0.4.6",
+          "filename": "colorama-0.4.6-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl",
+          "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "bytes": 25335
+        },
+        {
+          "kind": "wheel",
+          "package": "einops",
+          "version": "0.8.2",
+          "filename": "einops-0.8.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+          "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+          "bytes": 65638
+        },
+        {
+          "kind": "wheel",
+          "package": "filelock",
+          "version": "3.32.0",
+          "filename": "filelock-3.32.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/06/79/b4c714bef36bc4ec2beeae1e0c124f0223888cd8c6feb1cdc56038116920/filelock-3.32.0-py3-none-any.whl",
+          "sha256": "d396bea984af47333ef05e50eae7eff88c84256de6112aea0ec48a233c064fe3",
+          "bytes": 97732
+        },
+        {
+          "kind": "wheel",
+          "package": "flatbuffers",
+          "version": "25.12.19",
+          "filename": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl",
+          "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+          "bytes": 26661
+        },
+        {
+          "kind": "wheel",
+          "package": "fsspec",
+          "version": "2026.6.0",
+          "filename": "fsspec-2026.6.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/e5/22/4222d7ddf3da30f363edaa98e329c2bce6c65497c9cb2810931c8b2c0fbc/fsspec-2026.6.0-py3-none-any.whl",
+          "sha256": "02e0b71817df9b2169dc30a16832045764def1191b43dcff5bb85bdee212d2a1",
+          "bytes": 203949
+        },
+        {
+          "kind": "wheel",
+          "package": "huggingface-hub",
+          "version": "0.36.2",
+          "filename": "huggingface_hub-0.36.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a8/af/48ac8483240de756d2438c380746e7130d1c6f75802ef22f3c6d49982787/huggingface_hub-0.36.2-py3-none-any.whl",
+          "sha256": "48f0c8eac16145dfce371e9d2d7772854a4f591bcb56c9cf548accf531d54270",
+          "bytes": 566395
+        },
+        {
+          "kind": "wheel",
+          "package": "jinja2",
+          "version": "3.1.6",
+          "filename": "jinja2-3.1.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
+          "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
+          "bytes": 134899
+        },
+        {
+          "kind": "wheel",
+          "package": "markupsafe",
+          "version": "3.0.3",
+          "filename": "markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/05/73/c4abe620b841b6b791f2edc248f556900667a5a1cf023a6646967ae98335/markupsafe-3.0.3-cp313-cp313-win_amd64.whl",
+          "sha256": "9a1abfdc021a164803f4d485104931fb8f8c1efd55bc6b748d2f5774e78b62c5",
+          "bytes": 15113
+        },
+        {
+          "kind": "wheel",
+          "package": "mpmath",
+          "version": "1.3.0",
+          "filename": "mpmath-1.3.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+          "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+          "bytes": 536198
+        },
+        {
+          "kind": "wheel",
+          "package": "onnxruntime",
+          "version": "1.31.0",
+          "filename": "onnxruntime-1.31.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c4/86/05ed2056f43b27aaf12ebc592ebd9037a26bed315958cf882f43425fd469/onnxruntime-1.31.0-cp313-cp313-win_amd64.whl",
+          "sha256": "73e0165d58ece068c2a8a1c477c90b38e5a8adbbd399fdfdfd4bd79cbc28ff8d",
+          "bytes": 14888306
+        },
+        {
+          "kind": "wheel",
+          "package": "protobuf",
+          "version": "7.36.2",
+          "filename": "protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/8a/55/b77bda4e5e5f5971fb51b07663694690e9afdb9402136c16a522bd621cad/protobuf-7.36.2-cp310-abi3-win_amd64.whl",
+          "sha256": "a300819d441e078a5608c0d3c709796bb548136058fda017ae51d425b44fd353",
+          "bytes": 456514
+        },
+        {
+          "kind": "wheel",
+          "package": "psutil",
+          "version": "7.2.2",
+          "filename": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/b4/90/e2159492b5426be0c1fef7acba807a03511f97c5f86b3caeda6ad92351a7/psutil-7.2.2-cp37-abi3-win_amd64.whl",
+          "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+          "bytes": 137737
+        },
+        {
+          "kind": "wheel",
+          "package": "pyyaml",
+          "version": "6.0.3",
+          "filename": "pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/97/c9/39d5b874e8b28845e4ec2202b5da735d0199dbe5b8fb85f91398814a9a46/pyyaml-6.0.3-cp313-cp313-win_amd64.whl",
+          "sha256": "79005a0d97d5ddabfeeea4cf676af11e647e41d81c9a7722a193022accdb6b7c",
+          "bytes": 154090
+        },
+        {
+          "kind": "wheel",
+          "package": "regex",
+          "version": "2026.5.9",
+          "filename": "regex-2026.5.9-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/e6/1d/861a93719fb9ee7dbfc3761b3797b7a3e112a5d42c6129459d2d741be9b5/regex-2026.5.9-cp313-cp313-win_amd64.whl",
+          "sha256": "3527bb4942d2c14552155406cdedd906567456821848aed1cb4933a391bf5eca",
+          "bytes": 277747
+        },
+        {
+          "kind": "wheel",
+          "package": "requests",
+          "version": "2.33.1",
+          "filename": "requests-2.33.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl",
+          "sha256": "4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a",
+          "bytes": 64947
+        },
+        {
+          "kind": "wheel",
+          "package": "safetensors",
+          "version": "0.6.2",
+          "filename": "safetensors-0.6.2-cp38-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/2c/c3/c0be1135726618dc1e28d181b8c442403d8dbb9e273fd791de2d4384bcdd/safetensors-0.6.2-cp38-abi3-win_amd64.whl",
+          "sha256": "c7b214870df923cbc1593c3faee16bec59ea462758699bd3fee399d00aac072c",
+          "bytes": 320192
+        },
+        {
+          "kind": "wheel",
+          "package": "setuptools",
+          "version": "83.0.0",
+          "filename": "setuptools-83.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl",
+          "sha256": "29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3",
+          "bytes": 1008090
+        },
+        {
+          "kind": "wheel",
+          "package": "sympy",
+          "version": "1.14.0",
+          "filename": "sympy-1.14.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+          "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+          "bytes": 6299353
+        },
+        {
+          "kind": "wheel",
+          "package": "tokenizers",
+          "version": "0.22.2",
+          "filename": "tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+          "sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48",
+          "bytes": 2747786
+        },
+        {
+          "kind": "wheel",
+          "package": "tqdm",
+          "version": "4.67.3",
+          "filename": "tqdm-4.67.3-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl",
+          "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf",
+          "bytes": 78374
+        },
+        {
+          "kind": "wheel",
+          "package": "transformers",
+          "version": "4.57.6",
+          "filename": "transformers-4.57.6-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/03/b8/e484ef633af3887baeeb4b6ad12743363af7cce68ae51e938e00aaa0529d/transformers-4.57.6-py3-none-any.whl",
+          "sha256": "4c9e9de11333ddfe5114bc872c9f370509198acf0b87a832a0ab9458e2bd0550",
+          "bytes": 11993498
+        },
+        {
+          "kind": "wheel",
+          "package": "urllib3",
+          "version": "2.7.0",
+          "filename": "urllib3-2.7.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+          "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+          "bytes": 131087
+        },
+        {
+          "kind": "model",
+          "filename": "isnetis.onnx",
+          "target": "models/anime-seg.onnx",
+          "url": "https://huggingface.co/skytnt/anime-seg/resolve/493cb60893f47441b26ec4fb9a306bce9e342982/isnetis.onnx",
+          "sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+          "bytes": 176069933
+        },
+        {
+          "kind": "model",
+          "filename": "checkpoint-18000.pt",
+          "target": "models/semantic-sam.pt",
+          "url": "https://huggingface.co/24yearsold/l2d_sam_iter2/resolve/0b0608310fb7a89e32ecd7397147a249540cf1e7/checkpoint-18000.pt",
+          "sha256": "dda82b916f6c340bc5a6c3a077ff1214f9906906abe3707b1076d55b508f253f",
+          "bytes": 1294766917
+        },
+        {
+          "kind": "model",
+          "filename": "config.json",
+          "target": "models/depth-anything-v2-small/config.json",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/config.json",
+          "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+          "bytes": 950
+        },
+        {
+          "kind": "model",
+          "filename": "preprocessor_config.json",
+          "target": "models/depth-anything-v2-small/preprocessor_config.json",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/preprocessor_config.json",
+          "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+          "bytes": 775
+        },
+        {
+          "kind": "model",
+          "filename": "model.safetensors",
+          "target": "models/depth-anything-v2-small/model.safetensors",
+          "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/resolve/5426e4f0f36572d16453bbda7a8389317b1bef99/model.safetensors",
+          "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70",
+          "bytes": 99173660
+        },
+        {
+          "kind": "wheel",
+          "package": "torch",
+          "version": "2.8.0+cu128",
+          "filename": "torch-2.8.0+cu128-cp313-cp313-win_amd64.whl",
+          "url": "https://download-r2.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp313-cp313-win_amd64.whl",
+          "sha256": "9e20646802b7fc295c1f8b45fefcfc9fb2e4ec9cbe8593443cd2b9cc307c8405",
+          "bytes": 3461390892
+        },
+        {
+          "kind": "wheel",
+          "package": "torchvision",
+          "version": "0.23.0+cu128",
+          "filename": "torchvision-0.23.0+cu128-cp313-cp313-win_amd64.whl",
+          "url": "https://download-r2.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp313-cp313-win_amd64.whl",
+          "sha256": "f69174bc69474bd4d1405bac3ebd35bb39c8267ce6b8a406070cb3149c72e3b8",
+          "bytes": 7540079
+        }
+      ],
+      "fingerprint": "a4371113d3c693dab721e7c8dc737fbda64a62388cacf115c4f57c6d2d780805",
+      "bytes": 5079725961
+    },
+    "widget": {
+      "title": "위젯 출력",
+      "files": [
+        {
+          "kind": "widget",
+          "url": "https://github.com/electron/electron/releases/download/v44.7.0/electron-v44.7.0-win32-x64.zip",
+          "sha256": "eee30dc8fa1f5ea95490e59f44e46ea68dd24c6e93d22facf70fe5c2d4c2665c",
+          "bytes": 158293649,
+          "filename": "electron-v44.7.0-win32-x64.zip"
+        }
+      ],
+      "fingerprint": "b6571eb530581390b665d23e7867e7997337544cc86f9877169373d0ec1783bd",
+      "bytes": 158293649
+    }
+  }
+}

@@ -1,0 +1,7 @@
+See-through semantic segmentation runtime subset
+Source: https://github.com/shitagaki-lab/see-through
+Commit: df019de5129d6c4b406587a14c3501669441a783
+License: Apache-2.0 (see LICENSE)
+
+Only the import dependency closure of modules.semanticsam is retained.
+Training, annotations, upstream UI, sample artwork and unrelated models are excluded.

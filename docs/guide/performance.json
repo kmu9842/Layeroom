@@ -1,0 +1,19 @@
+{
+  "image_size": [
+    720,
+    1024
+  ],
+  "jobs": {
+    "cuda": {
+      "seconds": 13.87,
+      "peak_ram_mib": 2974.4,
+      "peak_vram_mib": 4999.1
+    },
+    "cpu": {
+      "seconds": 58,
+      "peak_ram_mib": 7032,
+      "device": "cpu",
+      "peak_vram_mib": 0
+    }
+  }
+}

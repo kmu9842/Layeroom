@@ -1,0 +1,29 @@
+{
+  "name": "layeroom",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "build:widget": "node node_modules/electron/install.js && vite build --config widget/vite.config.js && .venv\\Scripts\\python.exe -X utf8 scripts/build_widget.py",
+    "test:widget": "node --test tests/widget-options.mjs && node tests/widget.mjs",
+    "test:browser": "node tests/browser.mjs && node tests/editor-ui.mjs",
+    "test:paint": "node --test tests/paint.mjs"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "electron": "44.7.0",
+    "playwright": "^1.51.1",
+    "vite": "^6.3.5"
+  }
+}
