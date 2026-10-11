@@ -104,3 +104,37 @@ def test_gap_limits_step_defaults_and_legacy_migration(raster):
     card['settings'].update(layer_gap=.45, physics=True)
     settings = normalize_card(card)['settings']
     assert settings['layer_gap'] == .1 and 'physics' not in settings
+
+
+def test_layer_z_save_reopen_order_reset_and_validation(raster):
+    client,url,*_ = raster
+    assert client.get(url).json()['settings']['layer_z'] == {}
+    result = client.patch(url+'/settings',json={'layer_z':{'1':.8,'2':.2}})
+    assert result.status_code == 200
+    settings = result.json()['settings']
+    assert settings['layer_order'] == [2,1]
+    assert settings['layer_z'] == {'1':.8,'2':.2}
+    assert client.get(url).json()['settings'] == settings
+    partial = client.patch(url+'/settings',json={'layer_z':{'1':.6}}).json()['settings']
+    assert partial['layer_z'] == {'1':.6,'2':.2}
+    settings = partial
+    # Global spacing scales the cavity; relative positions stay unchanged.
+    assert client.patch(url+'/settings',json={'layer_gap':0}).json()['settings']['layer_z'] == settings['layer_z']
+    assert client.patch(url+'/settings',json={'layer_gap':.1}).json()['settings']['layer_z'] == settings['layer_z']
+    for invalid in [{'1':-.1},{'1':1.1},{'99':.5},{'1':'bad'}]:
+        assert client.patch(url+'/settings',json={'layer_z':invalid}).status_code == 422
+    before = client.get(url).json()['settings']
+    assert before['layer_z'] == settings['layer_z']
+    cleared = client.patch(url+'/settings',json={'layer_z':{}}).json()['settings']
+    assert cleared['layer_z'] == {} and cleared['layer_order'] == [2,1]
+    reset = client.patch(url+'/settings',json={'layer_z':{},'layer_order':[1,2]}).json()['settings']
+    assert reset['layer_order'] == [1,2]
+
+
+def test_sparse_depth_update_freezes_other_positions_before_sorting():
+    card = {'layers':[{'id':i,'name':str(i)} for i in range(1,5)],
+            'settings':{'layer_order':[4,3,2,1], 'layer_z':{'4':.9,'99':.2}}}
+    settings = normalize_card(card)['settings']
+    assert settings['layer_order'] == [3,2,4,1]
+    assert settings['layer_z'] == {'4':.9,'3':1/3,'2':2/3,'1':1}
+    assert normalize_card(card)['settings'] == settings

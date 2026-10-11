@@ -33,6 +33,7 @@ def unpack(content):
 def test_widget_captures_unsaved_settings_and_all_assets_without_mutating_library(widget_card):
     folder,original=widget_card
     settings={'layer_order':[1,2],'hidden_layers':[2],'layer_motion':{'1':False,'2':True},'layer_gap':.075,'frame_theme':'custom','custom_frame_color':'#aabbcc','custom_background_style':'image','custom_background_image':'background-0123456789abcdef.png','support_layers':False}
+    settings['layer_z']={'1':.15,'2':.85}
     with TestClient(api.app) as client:
         before=client.get('/api/cards/fixture').json()
         response=client.post('/api/cards/fixture/widget',json={'settings':settings,'revision':123,'theme':'dark','auto_rotate':True,'zoom':1.2})

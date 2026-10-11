@@ -11,6 +11,7 @@ import subprocess
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from typing import Annotated
 from urllib.parse import urlsplit
 import numpy as np
 from PIL import Image, UnidentifiedImageError
@@ -158,6 +159,7 @@ class Settings(BaseModel):
     motion_duration: float = Field(default=6,ge=3,le=12)
     layer_order: list[int] | None = None
     layer_motion: dict[str,bool] | None = None
+    layer_z: dict[str,Annotated[float,Field(ge=0,le=1,allow_inf_nan=False)]] | None = None
     hidden_layers: list[int] | None = None
 
 def validate_settings(metadata,changes,folder):
@@ -166,10 +168,12 @@ def validate_settings(metadata,changes,folder):
     ids = {l['id'] for l in metadata['layers']}
     if 'layer_order' in changes and (set(changes['layer_order']) != ids or len(changes['layer_order']) != len(ids)):
         raise HTTPException(422,'레이어 순서는 모든 레이어를 한 번씩 포함해야 합니다.')
-    if not set(changes.get('hidden_layers',[])) <= ids or not set(changes.get('layer_motion',{})) <= {str(i) for i in ids}:
+    if not set(changes.get('hidden_layers',[])) <= ids or not set(changes.get('layer_motion',{})) <= {str(i) for i in ids} or not set(changes.get('layer_z',{})) <= {str(i) for i in ids}:
         raise HTTPException(422,'존재하지 않는 레이어입니다.')
     if 'layer_motion' in changes:
         changes['layer_motion'] = {**metadata['settings']['layer_motion'],**changes['layer_motion']}
+    if changes.get('layer_z'):
+        changes['layer_z'] = {**metadata['settings']['layer_z'],**changes['layer_z']}
 
 @app.patch('/api/cards/{card_id}/settings')
 def settings(card_id: str, body: Settings):
@@ -179,6 +183,7 @@ def settings(card_id: str, body: Settings):
         changes = body.model_dump(exclude_unset=True,exclude_none=True)
         validate_settings(metadata,changes,folder)
         metadata['settings'].update(changes)
+        normalize_card(metadata)
         target = folder/'manifest.tmp'
         target.write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
         target.replace(folder/'manifest.json')

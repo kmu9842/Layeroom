@@ -9,7 +9,8 @@
     "build:widget": "node node_modules/electron/install.js && vite build --config widget/vite.config.js && .venv\\Scripts\\python.exe -X utf8 scripts/build_widget.py",
     "test:widget": "node --test tests/widget-options.mjs && node tests/widget.mjs",
     "test:browser": "node tests/browser.mjs && node tests/editor-ui.mjs",
-    "test:paint": "node --test tests/paint.mjs"
+    "test:paint": "node --test tests/paint.mjs",
+    "test:depth": "node --test tests/layer-depth.mjs && node tests/layer-depth-ui.mjs"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

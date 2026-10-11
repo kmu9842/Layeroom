@@ -10,7 +10,7 @@ import './style.css';
 import './paint.css';
 import './layout.css';
 
-const defaultSettings={depth:.65,tilt:true,frame:'champagne',background:'system',layer_gap:.025,angle_limit:40,breathing:false,edge_smoothing:true,support_layers:true,motion_amount:1,motion_duration:6,layer_motion:{},hidden_layers:[]};
+const defaultSettings={depth:.65,tilt:true,frame:'champagne',background:'system',layer_gap:.025,angle_limit:40,breathing:false,edge_smoothing:true,support_layers:true,motion_amount:1,motion_duration:6,layer_motion:{},layer_z:{},hidden_layers:[]};
 const asset=(c,file='cutout.png')=>`/assets/${c.id}/${file}?v=${c.updated_at}`;
 async function json(url,options){const r=await fetch(url,options);let d;try{d=await r.json();}catch{throw Error('로컬 서버에 연결할 수 없습니다. Layeroom을 다시 실행해 주세요.');}if(!r.ok)throw Error(typeof d.detail==='string'?d.detail:'요청을 처리하지 못했습니다.');return d;}
 const showResearch=import.meta.env.MODE!=='portable';

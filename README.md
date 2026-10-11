@@ -35,6 +35,8 @@
 
 완전 자동·무오류 분절이나 가려진 부분의 복원은 보장하지 않습니다. 필요한 부분은 경계 수정으로 보정합니다. 실제 360° 모델이나 Live2D 리깅 파일을 만드는 도구는 아닙니다.
 
+각 레이어 행의 **Z** 버튼을 누르면 슬라이더와 숫자 입력으로 위치를 지정합니다. 앞면은 0%, 뒷면은 100%입니다. 조절을 마치면 목록도 앞뒤 위치에 맞춰 정렬됩니다. 전체 Z축 간격을 바꾸면 개별 위치 비율을 유지하면서 깊이가 바뀝니다. 드래그는 현재 깊이 자리를 새 순서에 배정하고, **Z 위치 균등 배치**는 현재 순서대로 간격을 맞춥니다. **원본 순서 복원**은 개별 Z 위치도 초기화합니다. 지정한 위치는 설정 저장과 위젯 출력에 함께 반영됩니다.
+
 ## 개발 환경
 
 프로젝트 폴더는 `E:\project\Layeroom`입니다. 기존 작품은 `data/cards`에 유지합니다. `start.bat`으로 실행하고 `stop.bat`으로 종료합니다. 주소는 `http://127.0.0.1:8765`입니다. 새 개발 환경은 Python 3.11~3.13과 Node.js 22.12 이상에서 `setup.bat`으로 준비합니다.
@@ -43,6 +45,7 @@
 .venv/Scripts/python.exe -m pytest -q
 npm.cmd run build
 npm.cmd run test:paint
+npm.cmd run test:depth
 npm.cmd run test:browser
 npm.cmd run test:widget
 .venv/Scripts/python.exe -X utf8 scripts/build_portable.py

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
 import * as THREE from 'three';
 import {appearance} from './frameThemes';
+import {layerPositions,depthOrder} from './layerDepth';
 function rounded(w,h,r){
  const s=new THREE.Shape(),x=-w/2,y=-h/2;
  s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;
@@ -103,8 +104,8 @@ const Viewer=forwardRef(function Viewer({card,settings,mode,hidden,autoRotate,zo
   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
   function frame(t){if(disposed)return;const p=props.current,s=p.settings,exploded=p.mode==='layers',is3D=p.mode==='relief'||exploded;
    el.dataset.paused=String(p.paused);if(p.paused){raf=requestAnimationFrame(frame);return;}
-   const order=s.layer_order||card.layers.map(l=>l.id).reverse(),gap=Math.max(0,Math.min(.1,s.layer_gap??.025));
-   const signature=[gap,order.join(','),aspect,exploded,s.angle_limit].join('|');
+   const baseOrder=s.layer_order||card.layers.map(l=>l.id).reverse(),positions=layerPositions(baseOrder,s.layer_z),order=depthOrder(baseOrder,positions),gap=Math.max(0,Math.min(.1,s.layer_gap??.025));
+   const signature=[gap,order.join(','),order.map(id=>positions[id]).join(','),aspect,exploded,s.angle_limit].join('|');
    if(signature!==lastLayout){
     cavity=Math.max(0,(order.length-1)*gap);
     walls.scale.z=cavity+.02;walls.position.z=-cavity-.02;back.position.z=-cavity-.016;backRim.position.z=-cavity-.07;
@@ -112,6 +113,7 @@ const Viewer=forwardRef(function Viewer({card,settings,mode,hidden,autoRotate,zo
     const vertical=Math.max(5.7,projectedHeight+.8,(projectedWidth+.9)/aspect);
     camera.left=-vertical*aspect/2;camera.right=vertical*aspect/2;camera.top=vertical/2;camera.bottom=-vertical/2;camera.updateProjectionMatrix();
     el.dataset.layerOrder=order.join(',');el.dataset.frontZ='0';el.dataset.backZ=String(order.length>1?-cavity:0);el.dataset.frameDepth=String(cavity);lastLayout=signature;
+    el.dataset.layerZ=JSON.stringify(Object.fromEntries(order.map(id=>[id,-positions[id]*cavity])));
    }
    const limit=s.angle_limit*Math.PI/180;
    let rx=THREE.MathUtils.clamp(ctx.target.x,-limit*.8,limit*.8),ry=THREE.MathUtils.clamp(ctx.target.y,-limit,limit);
@@ -129,10 +131,11 @@ const Viewer=forwardRef(function Viewer({card,settings,mode,hidden,autoRotate,zo
     order.forEach((id,i)=>{
      const m=layerMeshes.get(id),shadow=shadowMeshes.get(id);if(!m)return;
      const selected=s.layer_motion?.[String(id)],motion=selected?breath:0,side=selected?sway:0;
-     m.visible=!p.hidden.has(id);m.position.set(side*.006,motion*.011,-i*gap);m.rotation.z=motion*.0012;m.renderOrder=(order.length-i)*2;
+     const z=-positions[id]*cavity,nextGap=i<order.length-1?(positions[order[i+1]]-positions[id])*cavity:0;
+     m.visible=!p.hidden.has(id);m.position.set(side*.006,motion*.011,z);m.rotation.z=motion*.0012;m.renderOrder=(order.length-i)*2;
      const support=supportMeshes.get(id);
-     if(support){const thickness=Math.max(0,cavity-i*gap-.003);support.visible=m.visible&&Boolean(s.support_layers)&&!exploded&&thickness>.005;support.position.copy(m.position);support.rotation.copy(m.rotation);support.scale.z=thickness;if(support.material.userData.depthUniform)support.material.userData.depthUniform.value=thickness;}
-     shadow.visible=m.visible&&gap>0&&i<order.length-1;shadow.position.set(m.position.x+.007,m.position.y-.009,-i*gap-Math.min(.02,gap*.3));shadow.rotation.z=m.rotation.z;shadow.material.opacity=.07;shadow.renderOrder=m.renderOrder-1;
+     if(support){const thickness=Math.max(0,cavity+z-.003);support.visible=m.visible&&Boolean(s.support_layers)&&!exploded&&thickness>.005;support.position.copy(m.position);support.rotation.copy(m.rotation);support.scale.z=thickness;if(support.material.userData.depthUniform)support.material.userData.depthUniform.value=thickness;}
+     shadow.visible=m.visible&&nextGap>0;shadow.position.set(m.position.x+.007,m.position.y-.009,z-Math.min(.02,nextGap*.3));shadow.rotation.z=m.rotation.z;shadow.material.opacity=.07;shadow.renderOrder=m.renderOrder-1;
     });el.dataset.breathing=String(Boolean(s.breathing&&!reduce.matches));el.dataset.supports=String([...supportMeshes.values()].filter(m=>m.visible).length);
    }
    walls.visible=frontRim.visible=backRim.visible=back.visible=!exploded;
