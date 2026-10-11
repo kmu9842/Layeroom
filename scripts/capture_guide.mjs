@@ -75,13 +75,17 @@ try {
   ['배경 이미지','배경을 이미지로 바꾸면 파일 선택 버튼이 나타납니다. 마지막에 액자 설정 저장을 누르세요.']
  ],['.theme-picker','.custom-theme']);
  await choose(demoId);
+ await page.locator('.layer-z-toggle').first().click();
+ await page.locator('.layer-position-control input[type=range]').fill('15');
+ await page.locator('.layer-position-control input[type=range]').press('Tab');
  await page.locator('.inspector-scroll').evaluate(el=>el.scrollTop=el.scrollHeight);
  await page.mouse.move(620,520);await page.waitForTimeout(800);
- await shot('05-layers','레이어 순서·고정·움직임','목록 위쪽이 액자 앞면입니다.',[
+ await shot('05-layers','레이어 Z 위치·순서','레이어 행의 Z 버튼으로 개별 깊이를 지정합니다.',[
+  ['개별 Z 위치','슬라이더 또는 숫자를 입력합니다. 앞면 0% ↔ 뒷면 100%이며, 조절을 마치면 목록도 앞뒤 위치에 맞춰 정렬됩니다.'],
   ['순서 변경','레이어의 손잡이·이름 영역을 잡고 위아래로 드래그합니다. 키보드는 Space → 방향키 → Space로 이동합니다.'],
-  ['고정 / 움직임','기본은 고정입니다. 레이어 움직임을 켠 뒤 각 행의 체크로 움직일 부위를 지정하세요. 회전·전환 관성은 없습니다. 눈 아이콘은 표시 여부를 바꿉니다.'],
-  ['경계 수정과 복원','경계 수정으로 부위를 다시 칠할 수 있습니다. 원본 순서 복원은 레이어 배치를 처음 순서로 되돌립니다.']
- ],['.layer-list','.layer-motion-check','.boundary-edit-button']);
+  ['균등 배치·원본 복원','Z 위치 균등 배치는 현재 순서를 유지하며 간격을 맞춥니다. 원본 순서 복원은 순서와 개별 Z 위치를 초기화합니다.'],
+  ['고정 / 움직임','기본은 고정입니다. 레이어 움직임을 켠 뒤 각 행의 체크로 움직일 부위를 지정하세요. 눈 아이콘은 표시 여부를 바꿉니다.']
+ ],['.layer-position-control','.layer-row:nth-child(2) .layer-drag-handle','.layer-footnote','.layer-motion-check']);
  await choose(demoId);await page.getByRole('button',{name:'경계 수정',exact:true}).click();
  await page.locator('.paint-loading').waitFor({state:'hidden'});
  const palette=page.locator('.paint-palette button');

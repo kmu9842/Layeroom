@@ -13,6 +13,7 @@ packaging=importlib.util.module_from_spec(spec);spec.loader.exec_module(packagin
     'tests/dummy.png','research.md','README.md','release-manifest.json',
     'guide/index.html','guide/screenshots/private.png'])
 def test_only_exe_and_final_guide_pages_are_distributed(tmp_path,monkeypatch,relative):
+    (tmp_path/'package.json').write_text('{"version":"1.1.0"}',encoding='utf-8')
     output=tmp_path/'build/Layeroom';output.mkdir(parents=True)
     (output/'Layeroom.exe').write_bytes(b'MZ-executable')
     (output/'guide').mkdir()

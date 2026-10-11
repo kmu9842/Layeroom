@@ -2,13 +2,15 @@
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import zipfile
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 archive=ROOT/'release/Layeroom-Windows-x64.zip'
-target=ROOT/'test-results/current-archive'
+target=Path(os.environ.get('LAYEROOM_ARCHIVE_CHECK',str(ROOT/'test-results/current-archive'))).resolve()
+assert target.is_relative_to((ROOT/'test-results').resolve())
 assert not target.exists(),'Do not overwrite an extracted verification copy'
 manifest=json.loads((ROOT/'build/release-manifest.json').read_text(encoding='utf-8'))
 with zipfile.ZipFile(archive) as z:

@@ -29,7 +29,7 @@ def snapshot_payload(folder,metadata,settings,theme,auto_rotate,zoom):
     if background:files.add(background)
     output=io.BytesIO()
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
-        archive.writestr('package.json',json.dumps({'name':'layeroom-widget','version':'1.0.0','main':'main.cjs'}))
+        archive.writestr('package.json',json.dumps({'name':'layeroom-widget','version':'1.1.0','main':'main.cjs'}))
         archive.writestr('snapshot.json',json.dumps(snapshot,ensure_ascii=False,separators=(',',':')))
         for filename in ['main.cjs','preload.cjs','options.cjs']:
             archive.write(ROOT/'widget'/filename,filename)

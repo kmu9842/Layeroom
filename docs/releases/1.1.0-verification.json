@@ -1,0 +1,56 @@
+{
+  "version": "1.1.0",
+  "executable_version": "1.1.0.0",
+  "python_tests_passed": 53,
+  "layer_depth_tests_passed": 3,
+  "paint_tests_passed": 4,
+  "widget_option_tests_passed": 3,
+  "browser_checks": [
+    "per-layer slider and numeric Z position",
+    "other layer positions preserved",
+    "depth order updates after editing",
+    "global spacing scales custom positions",
+    "zero spacing",
+    "uniform positions and original order reset",
+    "save and reopen",
+    "unsaved positions exported to actual widget EXE",
+    "light, dark, and mobile layouts",
+    "expanded controls do not overlap",
+    "original artwork preserved"
+  ],
+  "embedded_runtime": {
+    "embeddedApplication": true,
+    "isolatedRuntime": true,
+    "actualGuideArtwork": true,
+    "captureOnly": true,
+    "completed": true
+  },
+  "guide_capture": {
+    "actualPortableUI": true,
+    "initialCollectionEmpty": true,
+    "guideArtwork": "user-supplied character, local automatic segmentation",
+    "application_scenes": 8,
+    "native_setup_scene": true,
+    "specifications_image": true,
+    "widgetExecutable": true,
+    "errors": []
+  },
+  "distribution": {
+    "zip": "Layeroom-Windows-x64.zip",
+    "bytes": 5684680,
+    "sha256": "73ff70c782f681e7951aa23a2522a4d062bfb6e912addd3eca2063de3ec6cebf",
+    "files": 11,
+    "png_guides": 10,
+    "ascii_filenames": true,
+    "hashes_verified": true,
+    "crc_verified": true,
+    "first_run_prompt_verified": true,
+    "source_artwork_included": false,
+    "models_runtimes_research_included": false
+  },
+  "installed_update": {
+    "restarted": true,
+    "application_files_verified": 45,
+    "existing_artwork_files_unchanged": 226
+  }
+}

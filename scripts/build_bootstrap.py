@@ -111,7 +111,7 @@ def package():
     files = [OUT/'Layeroom.exe'] + sorted((OUT/'guide').glob('*.png'))
     assert len(files) == 11
     archive = RELEASE/'Layeroom-Windows-x64.zip'
-    manifest = {'application': 'Layeroom', 'version': '1.0.0', 'distribution': 'embedded-app-with-first-run-setup',
+    manifest = {'application': 'Layeroom', 'version': json.loads((ROOT/'package.json').read_text(encoding='utf-8'))['version'], 'distribution': 'embedded-app-with-first-run-setup',
         'empty_collection': True, 'user_artwork_included': False, 'guide_artwork_included': True,
         'research_notes_included': False, 'bundled_components': False, 'files': []}
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
